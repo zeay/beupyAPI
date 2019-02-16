@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Test BeupyAPI</title>
+  <link href="../css/testmain.css" rel="stylesheet">
+  <link href="../css/codemirror.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="row section">
+    <div class="container" id="title">
+
+      <div class="col-1-1">
+    <a href="http://beupy.com" title="Beupy Company Logo Click To Redirect"><img src="../image/beupymain.png" alt="Beupy Logo" width="50%" /></a>
+        <h1 class="center"><span class="caps">BeupyAPI<br>Test Area</span></h1>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="col-2-3">
+        <small class="code-label">Edit the form here</small>
+        <div id="editor-frame">
+          <div id="editor"></div>
+        </div>
+        <button id="resetButton" type="reset">Reset Form</button>
+        <button id="subButton" type="Newsletter">Newsletter Form</button>
+        <button id="messButton" type="Messenger">Messenger Form</button>
+      </div>
+
+      <div class="col-1-3">
+        <small class="code-label">Test it here</small>
+        <div id='formview'>
+        <form method="GET" action="https://apibeupy.openode.io/newsletter/youremail@domain.com">
+              <input type="email" name="email" placeholder="Your email" />
+              <button type="submit">Send Test</button>
+         </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../js/testindex.js"></script>
+</body>
+</html>

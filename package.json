@@ -1,0 +1,20 @@
+{
+  "name": "apibeupytemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d apiWebsite"
+  },
+  "keywords": [
+    "Beupy",
+    "BeupyTech",
+    "BeupyAPI"
+  ],
+  "author": "Kumar Saurabh",
+  "license": "ISC",
+  "homepage": "https://zeay.github.io/beupyAPI",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

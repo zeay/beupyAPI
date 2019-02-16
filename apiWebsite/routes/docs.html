@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>A Contact Form to Email Service | BeupyAPI</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BeupyAPI is a form backend, API and email service for HTML forms. It is the simplest way to embed custom contact us forms, order forms, or email capture forms on your static site.">
+  <meta property="og:title" content="A Contact Form to Email Service | BeupyAPI" />
+<meta property="og:description" content="BeupyAPI is a form backend, API and email service for HTML forms. It is the simplest way to embed custom contact us forms, order forms, or email capture forms on your static site." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://api.beupy.com" />
+  
+<meta itemprop="name" content="A Contact Form to Email Service | BeupyAPI">
+<meta itemprop="description" content="BeupyAPI is a form backend, API and email service for HTML forms. It is the simplest way to embed custom contact us forms, order forms, or email capture forms on your static site.">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Contact Form to Email Service | BeupyAPI"/>
+<meta name="twitter:description" content="BeupyAPI is a form backend, API and email service for HTML forms. It is the simplest way to embed custom contact us forms, order forms, or email capture forms on your static site."/>
+
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" href="../css/main.css">
+  <style type="text/css">
+     
+    @media only screen and (min-width:1367px){
+      .site-frame,
+      .site-section {
+        padding: 88px;
+      }
+    }
+     
+    @media only screen and (min-width:1281px) and (max-width:1366px){
+      .site-frame,
+      .site-section {
+        padding: 66px;
+      }
+    }
+     
+    @media only screen and (min-width:769px) and (max-width:1280px){
+      .site-frame,
+      .site-section {
+        padding: 44px;
+      }
+      .site-section.page-intro {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    @media only screen and (max-width:1024px){
+      html {
+        font-size: .9em;
+      }
+      .blog-grid {
+        flex-direction: column;
+      }
+      .blog-grid > .blog-grid-cell {
+        width: 100%;
+        max-width: 100%;
+      }
+      .blog-headline h1 {
+        font-size: 44px;
+      }
+      .blog-headline .sticky,
+      .post .sticky {
+        position: static;
+        top: auto;
+      }
+    }
+    @media only screen and (min-width:769px){
+      .site-nav .menu-icon,
+      .site-nav .account-icon,
+      .site-nav .close-icon {
+        display: none;
+      }
+    }
+     
+    @media only screen and (max-width:768px){
+      .site-nav .main-nav {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: width 0s linear;
+      }
+      .site-nav .account-nav .text-link {
+        display: none;
+      }
+      #main-nav.expanded {
+        display: block;
+        width: 252px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--isabelline);
+        white-space: nowrap;
+        padding-bottom: 44px;
+        transition: all 0.14s linear;
+      }
+      #main-nav.expanded .site-link:not(.close-icon) a {
+        padding-top: 11px;
+        padding-bottom: 11px;
+      }
+      .grid {
+        flex-direction: column;
+      }
+      .grid > .grid-cell {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+      .blog-grid > .blog-grid-cell {
+        padding: 0;
+      }
+      .site-frame,
+      .site-section {
+        padding: 44px;
+      }
+      .site-section.page-intro {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .site-section.plan-detail .grid > .grid-cell {
+        padding: 22px;
+        padding-top: 33px;
+      }
+      .site-section.plan-detail .grid > .grid-cell + .grid-cell {
+        border-top: 1px solid var(--platinum);
+      }
+      .site-section.plan-detail hr {
+        margin-top: 0;
+      }
+      .site-section.plan-detail .trusted-by-logos .logo-strip {
+        max-width: 100%;
+      }
+    }
+     
+    @media only screen and (max-width:425px){
+      html {
+        font-size: .825em;
+      }
+      .site-frame,
+      .site-section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body class="site" id="site-body">
+    <div class="site-container">  
+        <header id="site-header" class="site-header">
+
+          <nav class="site-nav">
+            <a class="site-link menu-icon" title="Show site navigation" id="open-menu">
+              <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 17">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M-4-8h32.9999986v32.9999986H-4z"/>
+                  <path class="menu-icon-path" d="M.12499975 16.7499985H24.8749983v-2.7499998H.12499975v2.7499998zm0-6.8749996H24.8749983V7.1249991H.12499975v2.7499998zm0-9.62499939V2.9999993H24.8749983V.24999951H.12499975z"/>
+                </g>
+              </svg>
+            </a>
+                <ul class="main-nav" id="main-nav">
+                  <li class="site-link close-icon">
+                    <a title="Close menu" id="close-menu">
+                      <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M-6-6h32.9999986v32.9999986H-6z"/>
+                          <path class="close-icon-path" fill="#000" d="M20.1249984 2.8137492L18.1862485.87499959 10.499999 8.5612494 2.8137492.87499959.87499959 2.8137492 8.5612494 10.499999.87499959 18.1862485l1.93874961 1.9387499 7.6862498-7.6862498 7.6862495 7.6862498 1.9387499-1.9387499-7.6862498-7.6862495z"/>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                    <li class="site-link"><a title="Beupy API Homepage" href="../index.html">BeupyAPI</a></li>
+                    <li class="site-link"><a title="Get Your IP" href="ip.html">IP</a></li>
+                    <li class="site-link"><a title="BeupyAPI DOCS" href="docs.html">Docs</a></li>
+                    <li class="site-link"><a href="play.html" target="_blank" title="BeupyAPI Plaground Page">BeupyAPI Playground</a></li>
+
+                </ul>
+          </nav>
+        </header>
+
+     <div class="site-frame" id="site-main">
+        <section class="site-section page-intro" id="intro">
+          <p class="site-branding">
+            <span class="brand-mark">
+            <a href="http://beupy.com" title="Beupy Company Logo Click To Redirect"><img src="../image/beupymain.png" alt="Beupy Logo" width="50%" /></a>
+            </span>
+            <span class="brand-name">BeupyApI</span></p>
+          <div class="grid">
+            <div class="grid-cell">
+              <h1>Messenger Feature</h1>
+              <h2>Code snippets at right perform sending message feature for your website .<br /><em>To integrate just follow the same procedure all the fields and name are  mandatory and schould be same as shown you can add a optional field for subject with name = "subject" only.</em></h2>
+            </div>
+            <div class="grid-cell">
+              <small class="code-label">Example form for messenger</small>
+              <p class="code with-tips">
+                &lt;form action=<span data-tooltip="Use our URL for the form action">"http://apibeupy.openode.io/messenger/your@email.com"</span> method=<span data-tooltip="Form must GET">"GET"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="text" <span data-tooltip="name schould be userName">name="userName"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="email" <span data-tooltip="name schould be email">name="email"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="text" <span data-tooltip="name schould be message">name="message"</span>&gt;<br/>
+                &nbsp;&nbsp;<span data-tooltip="When a user submits, we email you the named data">&lt;input type="submit" value="Send"&gt;</span><br/>
+                &lt;/form&gt;
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="site-section page-intro" id="intro">
+          <div class="grid">
+            <div class="grid-cell">
+              <h1>Newsletter Feature</h1>
+              <h2>Code snippets at right perform adding newsletter or smiliar feature for your website .<br /><em>To integrate just follow the same procedure all the fields and name are  mandatory and schould be same as shown. This feature only accept one arugument with name = "email" only.</em></h2>
+            </div>
+            <div class="grid-cell">
+              <small class="code-label">Example form for newsletter</small>
+              <p class="code with-tips">
+                &lt;form action=<span data-tooltip="Use our URL for the form action">"http://apibeupy.openode.io/newsletter/your@email.com"</span> method=<span data-tooltip="Form must GET">"GET"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="email" <span data-tooltip="name schould be email">name="email"</span>&gt;<br/>
+                &nbsp;&nbsp;<span data-tooltip="When a user submits, we email you the named data">&lt;input type="submit" value="Send"&gt;</span><br/>
+                &lt;/form&gt;
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="site-section page-intro" id="intro">
+          <div class="grid">
+            <div class="grid-cell">
+              <h1>Getting IP</h1>
+              <h2>Do Ajax call to our endpoint to get ip of your visited user . Do whatever you want to do with the result, memorise the url.
+              <br /><em>"http://apibeupy.openode.io/getIp"</em></h2>
+            </div>
+            <div class="grid-cell">
+              <small class="code-label">Example form for messenger</small>
+              <p class="code with-tips">
+                &lt;script&gt;<br/>
+                &nbsp;&nbsp;<span data-tooltip="Intialising xmlhttp">var xmlhttp = new XMLHttpRequest();</span><br/>
+                &nbsp;&nbsp;<span data-tooltip="Api domain to call">var domain = "http://apibeupy.openode.io/getIp";</span><br/>
+                &nbsp;&nbsp;<span data-tooltip="XML onreadystateschange event">xmlhttp.onreadystatechange = function(){ </span><br />
+                <span style="margin-left: 6%"></span><span>let result = JSON.parse(this.response);</span><br/>
+                <span style="margin-left: 6%"></span><span>console.log(result);</span><br/>
+                &nbsp;&nbsp;<span data-tooltip="end of XML onreadystateschange event function">}</span><br/>
+                &nbsp;&nbsp;<span data-tooltip="Opening xmlhttp">xmlhttp.open('GET', domain, true);</span><br/>
+                &nbsp;&nbsp;<span data-tooltip="Sending xmlhttp">xmlhttp.send();</span><br/>
+                &lt;/script&gt;
+              </p>
+            </div>
+          </div>
+        </section>
+        </div>
+        <footer id="site-footer" class="site-footer">
+          <p class="social-links">
+              <a title="BeupyTech on Twitter" href="https://twitter.com/BeupyTech" target="_blank">Twitter</a> | 
+              <a title="BeupyTech on Facebook" href="https://facebook.com/beupytech" target="_blank">Facebook</a> | 
+              <a title="BeupyAPI on GitHub" href="https://github.com/zeay/apibeupy" target="_blank">GitHub</a></p>
+          <small>
+              &copy; 2019 BeupyTech,  check  our   company website <a title="Visit BeupyTech Company Website" href="http://beupy.com" target="_blank">Beupy</a>
+         </small>
+        </footer>
+
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
