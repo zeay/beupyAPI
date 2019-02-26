@@ -48,7 +48,7 @@ function createRequest(method, path, callback){
 }
 
 
-createRequest('get', 'http://apibeupy.openode.io/getIp', function(){
+createRequest('get', 'https://apibeupy.openode.io/getIp', function(){
     if(this.readyState === 4 && this.status === 200){
         var result = JSON.parse(this.response);
         console.log('I am running no error');
